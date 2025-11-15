@@ -229,10 +229,12 @@ if (!isset($_SESSION['ten_dang_nhap'])) {
                 echo "<h2>Quản lý Người dùng</h2><p>Nội dung trang quản lý người dùng sẽ ở đây.</p>";
             }
             elseif ($currentPage == 'bookings') {
-                echo "<h2>Quản lý Đặt phòng</h2><p>Nội dung trang quản lý tất cả đặt phòng sẽ ở đây.</p>";
+                include('booking.php');
+                //echo "<h2>Quản lý Đặt phòng</h2><p>Nội dung trang quản lý tất cả đặt phòng sẽ ở đây.</p>";
             }
              elseif ($currentPage == 'bills') {
-                echo "<h2>Quản lý Hóa đơn</h2><p>Nội dung trang quản lý hóa đơn sẽ ở đây.</p>";
+                include('admin_bills.php');
+                //echo "<h2>Quản lý Hóa đơn</h2><p>Nội dung trang quản lý hóa đơn sẽ ở đây.</p>";
             }
             else {
                 // Trang mặc định (dashboard)
