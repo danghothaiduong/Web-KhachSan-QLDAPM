@@ -2,11 +2,6 @@
 if (!isset($conn) || $conn->connect_error) {
      include('connect_db.php');
 }
-
-
-// BƯỚC 2: Truy vấn dữ liệu
-// admin_bills.php (BƯỚC 2: Truy vấn dữ liệu)
-
 $sql = "
 SELECT 
     hd.hoa_don_id, 
